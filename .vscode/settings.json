@@ -54,5 +54,6 @@
         "algorithm": "cpp",
         "queue": "cpp",
         "stack": "cpp"
-    }
+    },
+    "cortex-debug.showRTOS": true
 }
