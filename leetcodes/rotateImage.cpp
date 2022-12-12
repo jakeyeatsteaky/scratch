@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 
 void rotate(std::vector<std::vector<int>>& matrix);
 void printMatrix(std::vector<std::vector<int>> matrix);
@@ -8,6 +9,10 @@ int main(int argc, char** argv)
 {
     std::vector<std::vector<int>> matrix;
     matrix.push_back({1,1,1,1,1 });
+
+    std::queue<std::pair<int,int>> queue;
+    queue.push(std::pair<int,int>(1,1));
+
     matrix.push_back({2,2,2,2,2});
     matrix.push_back({3,3,3,3,3});
     matrix.push_back({4,4,4,4,4});
